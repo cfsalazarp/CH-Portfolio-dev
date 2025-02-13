@@ -1,0 +1,27 @@
+.terminal {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  font-family: 'Courier New', monospace;
+  padding: 10px;
+  border-radius: 5px;
+  width: 500px;
+  border: 1px solid #333;
+}
+.terminal-header {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+.terminal-body {
+  padding: 10px;
+  white-space: pre-wrap;
+}

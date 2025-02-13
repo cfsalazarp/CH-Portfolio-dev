@@ -1,0 +1,11 @@
+<header class="glass-header">
+  <h1>{{ "header.title" | translate }}</h1>
+  <nav>
+    <a href="#about">{{ "header.about" | translate }}</a>
+    <a href="#projects">{{ "header.projects" | translate }}</a>
+    <a href="#contact">{{ "header.contact" | translate }}</a>
+    <br>
+    <a href="" (click)="useLanguage('es')">🇨🇴</a> |
+    <a href="" (click)="useLanguage('en')">🇺🇸</a>
+  </nav>
+</header>

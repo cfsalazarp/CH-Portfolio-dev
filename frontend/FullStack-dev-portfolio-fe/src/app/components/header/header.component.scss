@@ -1,0 +1,55 @@
+.glass-header {
+  height: 3rem;
+  top: 0;
+  width: -webkit-fill-available;
+  backdrop-filter: blur(10px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0.6rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0.25rem 0.37rem rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+}
+h1 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+nav {
+  display: flex;
+  gap: 1.25rem;
+  color: #fff;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: opacity 0.3s;
+}
+nav a:hover {
+  opacity: 0.7;
+}
+button {
+  margin-left: 0.6rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+button:hover {
+  opacity: 0.7;
+}
+
+.language-switcher button {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  margin-left: 0.6rem;
+  transition: opacity 0.3s;
+}
+.language-switcher button:hover {
+  opacity: 0.7;
+}

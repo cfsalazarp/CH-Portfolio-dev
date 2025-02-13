@@ -1,0 +1,11 @@
+{
+	"header": {
+		"about": "Sobre mí",
+		"contact": "Contacto",
+		"projects": "Lo que hago",
+		"title": "Portafolio"
+	},
+	"hero": {
+		"hello": "Hey, me llamo"
+	}
+}
