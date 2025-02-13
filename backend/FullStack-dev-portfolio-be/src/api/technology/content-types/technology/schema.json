@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "technologies",
+  "info": {
+    "singularName": "technology",
+    "pluralName": "technologies",
+    "displayName": "technology"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "mappedBy": "technologies"
+    },
+    "work_experiences": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::work-experience.work-experience",
+      "mappedBy": "technologies"
+    }
+  }
+}

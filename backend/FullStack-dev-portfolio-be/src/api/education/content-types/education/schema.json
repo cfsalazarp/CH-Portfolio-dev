@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "educations",
+  "info": {
+    "singularName": "education",
+    "pluralName": "educations",
+    "displayName": "education"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "institution": {
+      "type": "string",
+      "required": false
+    },
+    "degree": {
+      "type": "string"
+    },
+    "stat_year": {
+      "type": "date"
+    },
+    "end_year": {
+      "type": "date",
+      "required": false
+    },
+    "certificate": {
+      "type": "string"
+    }
+  }
+}
