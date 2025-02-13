@@ -21,7 +21,12 @@
 .red { background: #ff5f56; }
 .yellow { background: #ffbd2e; }
 .green { background: #27c93f; }
+
 .terminal-body {
   padding: 10px;
   white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-wrap: wrap;
 }

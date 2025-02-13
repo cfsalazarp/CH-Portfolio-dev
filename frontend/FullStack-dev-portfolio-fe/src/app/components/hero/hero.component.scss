@@ -22,20 +22,40 @@
   margin-bottom: 10px;
 }
 .highlight {
-  color: #7CFC00;
+  color: #7cfc00;
 }
 .social-icons {
   margin-top: 20px;
   display: flex;
   gap: 15px;
 }
-.social-icons img {
-  width: 35px;
-  height: 35px;
+.social-icons button {
+  cursor: pointer;
+  display: inline-flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  background-color: #182b1c00;
+  border: none;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 500;
   transition: transform 0.3s;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  i {
+    color: #fff;
+  }
 }
-.social-icons img:hover {
+.social-icons button:hover {
   transform: scale(1.1);
+  i {
+    color: #0ec839;
+  }
 }
 .hero-right img {
   width: 280px;
