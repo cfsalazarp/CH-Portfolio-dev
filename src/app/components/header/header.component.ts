@@ -1,16 +1,19 @@
-import { Component } from '@angular/core';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { Component } from "@angular/core";
+import { TranslateModule, TranslateService } from "@ngx-translate/core";
 
 @Component({
-  selector: 'app-header',
+  selector: "app-header",
   imports: [TranslateModule],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss',
+  templateUrl: "./header.component.html",
+  styleUrl: "./header.component.scss",
 })
 export class HeaderComponent {
   constructor(private translate: TranslateService) {}
 
-  useLanguage(language: string): void {
-    this.translate.use(language ?? 'es');
+  useLanguage(language: string, event: Event): void {
+    event.preventDefault();
+    console.log(`Changing language to ${language}`);
+
+    this.translate.use(language ?? "es");
   }
 }

@@ -12,6 +12,10 @@
   max-width: 1200px;
   align-items: center;
   justify-content: space-between;
+
+  @media  screen and (max-width: 900px) {
+    flex-direction: column-reverse;
+  }
 }
 .hero-left {
   flex: 1;

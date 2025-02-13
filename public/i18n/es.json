@@ -7,6 +7,6 @@
 	},
 	"hero": {
 		"description": "$ echo 'Desarrollador apasionado de TypeScript creando aplicaciones robustas con código seguro en tipos. Especializado en React, Node.js y arquitectura de sistemas.' > about.ts",
-		"hello": "Hola!, soy"
+		"hello": "Hola! soy"
 	}
 }

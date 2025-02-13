@@ -11,14 +11,29 @@
   align-items: center;
   box-shadow: 0 0.25rem 0.37rem rgba(0, 0, 0, 0.1);
   margin: 1rem;
+
+  @media screen and (max-width: 900px) {
+    height: 2rem;
+    padding: 1rem;
+  }
+
   img {
     width: 8rem;
     height: auto;
     transition: filter 0.3s ease-in-out;
-    filter: invert(0%) sepia(0%) saturate(1) hue-rotate(0deg);
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
   }
   a:hover img {
-    filter: invert(40%) sepia(100%) saturate(300%) hue-rotate(180deg);
+    transform: scale(1.1);
+    fill: #fff;
+  }
+
+  #nav {
+    @media screen and (max-width: 900px) {
+      display: none;    
+    }
   }
 }
 h1 {

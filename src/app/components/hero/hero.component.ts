@@ -10,14 +10,14 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class HeroComponent {
   profileDescription: string = '';
-  constructor(private translate: TranslateService) {}
 
-  ngOnInit() {
-    this.profileDescription = this.translate.currentLang === 'es' ? "$ echo 'Desarrollador apasionado por la tecnología y la programación.'" :
-    "$ echo 'Developer passionate about technology and programming.'";
+  constructor(private translate: TranslateService) { }
+
+  ngOnChange(): void {
+    this.profileDescription = this.translate.instant('hero.description');
   }
 
-  useLanguage(language: string): void {
-    this.translate.use(language ?? 'es');
-  }
+  // useLanguage(language: string): void {
+  //   this.translate.use(language ?? 'es');
+  // }
 }

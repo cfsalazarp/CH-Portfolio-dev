@@ -3,12 +3,21 @@
     <img src="assets/images/ChLogo.svg" alt="LogoCH">
   </a>
 
-  <nav>
+  <nav id="nav">
     <a href="#about">{{ "header.about" | translate }}</a>
     <a href="#projects">{{ "header.projects" | translate }}</a>
     <a href="#contact">{{ "header.contact" | translate }}</a>
     <br>
-    <a href="" (click)="useLanguage('es')">🇨🇴</a> |
-    <a href="" (click)="useLanguage('en')">🇺🇸</a>
+    <a href="" (click)="useLanguage('es', $event)">🇨🇴</a> |
+    <a href="" (click)="useLanguage('en', $event)">🇺🇸</a>
+  </nav>
+  <nav id="sidebar" class="sidebar">
+    <ul>
+      <li><a href="#about">{{ "header.about" | translate }}</a></li>
+      <li><a href="#projects">{{ "header.projects" | translate }}</a></li>
+      <li><a href="#contact">{{ "header.contact" | translate }}</a></li>
+      <li><a href="" (click)="useLanguage('es', $event)">🇨🇴</a></li>
+      <li><a href="" (click)="useLanguage('en', $event)">🇺🇸</a></li>
+    </ul>
   </nav>
 </header>
