@@ -3,9 +3,10 @@
 		"about": "Sobre mí",
 		"contact": "Contacto",
 		"projects": "Lo que hago",
-		"title": "Portafolio"
+		"title": "ch.dev"
 	},
 	"hero": {
-		"hello": "Hey, me llamo"
+		"description": "$ echo 'Desarrollador apasionado de TypeScript creando aplicaciones robustas con código seguro en tipos. Especializado en React, Node.js y arquitectura de sistemas.' > about.ts",
+		"hello": "Hola!, soy"
 	}
 }

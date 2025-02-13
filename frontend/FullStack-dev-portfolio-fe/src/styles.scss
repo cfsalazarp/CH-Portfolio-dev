@@ -1,5 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
-body{
+:root {
+  --x: 50vw;
+  --y: 50vh;
+}
+
+body {
   margin: 0;
-  background: linear-gradient(135deg, #053B06, #139A43);
+  background: linear-gradient(135deg, #053B06, #139A43); /* Color de fondo */
+  overflow: hidden; /* Evita barras de desplazamiento */
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0) 80%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: left 0.05s linear, top 0.05s linear;
 }

@@ -9,9 +9,13 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './hero.component.scss',
 })
 export class HeroComponent {
+  profileDescription: string = '';
   constructor(private translate: TranslateService) {}
-  terminalText: string =
-    "$ echo 'Desarrollador apasionado por la tecnología y la programación.'";
+
+  ngOnInit() {
+    this.profileDescription = this.translate.currentLang === 'es' ? "$ echo 'Desarrollador apasionado por la tecnología y la programación.'" :
+    "$ echo 'Developer passionate about technology and programming.'";
+  }
 
   useLanguage(language: string): void {
     this.translate.use(language ?? 'es');
