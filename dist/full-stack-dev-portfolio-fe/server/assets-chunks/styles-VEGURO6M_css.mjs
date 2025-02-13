@@ -1,0 +1,2 @@
+export default `:root{--x: 50vw;--y: 50vh}body{margin:0;background:linear-gradient(135deg,#053b06,#139a43);overflow:hidden;position:relative}body:after{content:"";position:absolute;left:var(--x);top:var(--y);width:250px;height:250px;background:radial-gradient(circle,#fff6,#0000 80%);border-radius:50%;transform:translate(-50%,-50%);pointer-events:none;transition:left .05s linear,top .05s linear}
+`;
