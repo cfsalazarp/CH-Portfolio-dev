@@ -21,10 +21,12 @@
     width: 8rem;
     height: auto;
     transition: filter 0.3s ease-in-out;
+
     @media screen and (max-width: 900px) {
       display: none;
     }
   }
+
   a:hover img {
     transform: scale(1.1);
     fill: #fff;
@@ -32,28 +34,44 @@
 
   #nav {
     @media screen and (max-width: 900px) {
-      display: none;    
+      display: none;
+    }
+
+    display: flex;
+    justify-content: center; // Centra horizontalmente
+    align-items: center; // Asegura alineación vertical
+    color: #fff;
+  }
+
+  #sidebar {
+    @media screen and (min-width: 900px) {
+      display: none;
     }
   }
 }
+
 h1 {
   font-size: 1.5rem;
   color: #fff;
 }
+
 nav {
   display: flex;
   gap: 1.25rem;
   color: #fff;
 }
+
 nav a {
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
   transition: opacity 0.3s;
 }
+
 nav a:hover {
   opacity: 0.7;
 }
+
 button {
   margin-left: 0.6rem;
   background: none;
@@ -63,6 +81,7 @@ button {
   cursor: pointer;
   transition: opacity 0.3s;
 }
+
 button:hover {
   opacity: 0.7;
 }
@@ -74,6 +93,7 @@ button:hover {
   margin-left: 0.6rem;
   transition: opacity 0.3s;
 }
+
 .language-switcher button:hover {
   opacity: 0.7;
 }
