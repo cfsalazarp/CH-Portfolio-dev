@@ -4,14 +4,12 @@
       <h1>{{"hero.hello" | translate }} <br><span class="highlight">~/Christian Salazar</span></h1>
       <app-linux-terminal [text]="profileDescription"></app-linux-terminal>
       <div class="social-icons flex space-x-4 mt-4">
-        <a href="https://github.com/cfsalazarp" target="_blank">
-          <i class="fa-brands fa-github fa-2xl"></i>
-        </a>
-        <a href="https://linkedin.com/in/christiansalazar10/" target="_blank">
-          <i class="fa-brands fa-linkedin fa-2xl"></i>
-        </a>
-        <a href="mailto:christiansalazar1129@gmail.com" target="_blank">
-          <i class="fa-solid fa-envelope fa-2xl"></i>
+        <a *ngFor="let social of socialLinks" [href]="social.url" target="_blank">
+          <i *ngIf="social.slug === 'github'" class="fa-brands fa-github fa-2xl" alt="GitHub"></i>
+          <i *ngIf="social.slug === 'linkedin'" class="fa-brands fa-linkedin fa-2xl" alt="LinkedIn"></i>
+          <i *ngIf="social.slug === 'mail'" class="fa-solid fa-envelope fa-2xl" alt="Correo"></i>
+          <i *ngIf="social.slug === 'instagram'" class="fa-brands fa-instagram fa-2xl" alt="Instagram"></i>
+          <i *ngIf="social.slug === 'x'" class="fa-brands fa-square-x-twitter fa-2xl" alt="X"></i>
         </a>
       </div>
     </div>
