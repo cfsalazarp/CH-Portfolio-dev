@@ -8,12 +8,20 @@ import { TranslateModule, TranslateService } from "@ngx-translate/core";
   styleUrl: "./header.component.scss",
 })
 export class HeaderComponent {
-  constructor(private translate: TranslateService) {}
+  currentLang = "";
+  constructor(private translate: TranslateService) {
+    this.currentLang = this.translate.currentLang;
+  }
 
   useLanguage(language: string, event: Event): void {
     event.preventDefault();
     console.log(`Changing language to ${language}`);
 
     this.translate.use(language ?? "es");
+  }
+
+  toggleLanguage() {
+    this.currentLang = this.currentLang === 'en' ? 'es' : 'en';
+    this.translate.use(this.currentLang);
   }
 }

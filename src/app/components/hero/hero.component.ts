@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './hero.component.scss',
 })
 export class HeroComponent {
-  profileDescription: string = '';
+  profileDescription: string = "$ echo 'Desarrollador apasionado de TypeScript creando aplicaciones robustas con código seguro en tipos. Especializado en React, Node.js y arquitectura de sistemas.' > about.ts";
   socialLinks: Social[] = [];
 
   constructor(
