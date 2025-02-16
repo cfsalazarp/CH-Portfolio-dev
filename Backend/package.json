@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "full-stack-dev-portfolio",
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
@@ -7,17 +7,17 @@
     "build": "strapi build",
     "deploy": "strapi deploy",
     "develop": "strapi develop",
-    "seed:example": "node ./scripts/seed.js",
     "start": "strapi start",
     "strapi": "strapi"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.10.2",
+    "@strapi/plugin-graphql": "^5.10.2",
     "@strapi/plugin-users-permissions": "5.10.2",
+    "@strapi/provider-upload-cloudinary": "^5.10.2",
     "@strapi/strapi": "5.10.2",
     "better-sqlite3": "11.3.0",
-    "fs-extra": "^10.0.0",
-    "mime-types": "^2.1.27",
+    "pg": "^8.13.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
@@ -34,6 +34,6 @@
     "npm": ">=6.0.0"
   },
   "strapi": {
-    "uuid": "a717a6be-1838-4b0d-bf65-5a3e93248822"
+    "uuid": "a4c76400-fcd0-425b-9893-8e257b0d1cff"
   }
 }
