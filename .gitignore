@@ -57,3 +57,7 @@ Thumbs.db
 # angular cache update
 .angular
 .npmrc
+/node_modules
+
+dist
+node_modules
