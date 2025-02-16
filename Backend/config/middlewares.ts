@@ -27,7 +27,14 @@ export default [
       },
     },
   },
-  "strapi::cors",
+  {
+    name: "strapi::cors",
+    config: {
+      origin: ["http://localhost:4200", "https://ch-portfolio-dev.netlify.app/"],
+      headers: ["Content-Type", "Authorization", "Accept"],
+      credentials: true,
+    },
+  },
   "strapi::poweredBy",
   "strapi::query",
   "strapi::body",
