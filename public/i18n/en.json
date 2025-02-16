@@ -2,10 +2,10 @@
 	"header": {
 		"about": "About",
 		"contact": "Contact",
-		"projects": "What I do",
-		"title": "ch.dev"
+		"projects": "What I do"
 	},
 	"hero": {
+		"button": "Projects",
 		"description": "$ echo 'Passionate TypeScript developer crafting robust applications with type-safe code. Specialized in React, Node.js, and system architecture.' > about.ts",
 		"hello": "Hi!, I'm"
 	}
