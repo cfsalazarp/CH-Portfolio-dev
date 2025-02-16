@@ -13,7 +13,7 @@ import { environment } from "../../environments/environment";
   styleUrl: './hero.component.scss',
 })
 export class HeroComponent {
-  profileDescription: string = "$ echo 'Desarrollador apasionado de TypeScript creando aplicaciones robustas con código seguro en tipos. Especializado en React, Node.js y arquitectura de sistemas.' > about.ts";
+  profileDescription: string = "$ echo 'Convierto ideas en interfaces fluidas con Angular y optimizo la experiencia con RxJS y NgRx. Colaboro con equipos de backend y UX para crear productos escalables y eficientes. Me encanta resolver problemas y construir soluciones que realmente funcionan.' > about.ts";
   socialLinks: Social[] = [];
   environment = environment;
 
@@ -23,17 +23,25 @@ export class HeroComponent {
   ) { }
 
   ngOnInit(): void {
+    this.loadTranslation();
+
+    // Suscribirse a los cambios de idioma para actualizar la traducción dinámicamente
+    this.translate.onLangChange.subscribe(() => {
+      this.loadTranslation();
+    });
     this.socialService.getSocialLinks().subscribe(data => {
       this.socialLinks = data;
     });
   }
 
   ngOnChange(): void {
+    this.loadTranslation();
     this.profileDescription = this.translate.instant('hero.description');
   }
-
-  // useLanguage(language: string): void {
-  //   this.translate.use(language ?? 'es');
-  // }
   
+  private loadTranslation(): void {
+    this.translate.get('hero.description').subscribe((translatedText: string) => {
+      this.profileDescription = translatedText;
+    });
+  }
 }
