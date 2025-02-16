@@ -12,7 +12,7 @@ import { FooterComponent } from "./components/footer/footer.component";
     TranslateModule,
     HeroComponent,
     ProjectsComponent,
-    FooterComponent,
+    FooterComponent
   ],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.scss",
