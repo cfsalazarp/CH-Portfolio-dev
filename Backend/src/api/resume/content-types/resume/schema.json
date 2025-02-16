@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resumes",
+  "info": {
+    "singularName": "resume",
+    "pluralName": "resumes",
+    "displayName": "resume"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "file": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "lang": {
+      "type": "string"
+    },
+    "updated": {
+      "type": "date"
+    }
+  }
+}
