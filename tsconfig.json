@@ -23,7 +23,8 @@
       "@env/*": ["src/environments/*"],
       "@assets/*": ["src/assets/*"],
       "@services/*": ["src/app/services/*"]
-    }
+    },
+    "types": ["node"],
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
