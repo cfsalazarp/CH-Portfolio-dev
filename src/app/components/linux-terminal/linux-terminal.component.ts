@@ -19,7 +19,7 @@ export class LinuxTerminalComponent {
     if (this.index < this.text.length) {
       this.displayedText += this.text[this.index];
       this.index++;
-      setTimeout(() => this.typeEffect(), 50);
+      setTimeout(() => this.typeEffect(), 10);
     }
   }
 }
