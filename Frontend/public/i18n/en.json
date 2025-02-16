@@ -1,0 +1,12 @@
+{
+	"header": {
+		"about": "About",
+		"contact": "Contact",
+		"projects": "What I do"
+	},
+	"hero": {
+		"button": "Projects",
+		"description": "$ echo 'Turn ideas into fluid interfaces with Angular and optimize the experience with RxJS and NgRx. I collaborate with backend and UX teams to create scalable and efficient products. I love solving problems and building solutions that really work.' > about.ts",
+		"hello": "Hi!, I'm"
+	}
+}
