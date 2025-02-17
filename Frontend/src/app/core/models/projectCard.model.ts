@@ -1,7 +1,8 @@
+import { Block } from './block.model';
 export interface Project {
     id: number;
     title: string;
-    description: string[];
+    description: Block[];
     image: string;
     repo_url?: string;
     live_url?: string;

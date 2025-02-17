@@ -56,6 +56,9 @@ body {
   --sb-size: 14px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
+  --glass-bg: #ffffff4d;
+  --ch-border-rd: 20px;
+
 }
 
 body::-webkit-scrollbar {
@@ -64,12 +67,12 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-track {
   background: var(--sb-track-color);
-  border-radius: 10px;
+  border-radius: var(--ch-border-rd);
 }
 
 body::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-color);
-  border-radius: 10px;
+  border-radius: var(--ch-border-rd);
 }
 
 h1,
@@ -108,6 +111,31 @@ p {
 
 /* Para escritorios grandes */
 @media (min-width: 1441px) {
+}
+
+.btn-primary {
+  font-family: 'Monda', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  background: #1e1e1e;
+  border: 2px solid #1e1e1e;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  .icon {
+    margin-left: 5px;
+  }
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+  color: #ccc;
+  border-color: #ccc;
 }
 
 .btn-secondary, .btn-link {

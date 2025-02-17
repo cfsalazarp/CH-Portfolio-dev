@@ -103,14 +103,6 @@
       "relation": "manyToMany",
       "target": "api::technology.technology",
       "inversedBy": "projects"
-    },
-    "descriptions": {
-      "type": "richtext",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
     }
   }
 }

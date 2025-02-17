@@ -1,0 +1,47 @@
+.projects {
+  text-align: center;
+  padding: 2rem;
+}
+
+.section-title {
+  text-align: center;
+  color: #ccc;font-size: 50px;
+  margin-bottom: 1rem;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.filter-btn:hover {
+  background: #0056b3;
+}
+
+.project-slider {
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  justify-content: space-evenly;
+}
+
+app-project-card {
+  flex: 0 0 auto;
+  padding: 15px;
+}

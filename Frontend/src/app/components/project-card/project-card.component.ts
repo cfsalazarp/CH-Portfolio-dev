@@ -16,4 +16,8 @@ export class ProjectCardComponent {
     console.log("ProjectCardComponent: ngOnInit");
     console.log("project: ", this.project);
   }
+
+  openLink(a: string){
+    window.open(a, '_blank');
+  }
 }
