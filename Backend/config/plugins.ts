@@ -17,10 +17,7 @@ export default ({ env }) => ({
     settings: {
       cors: {
         enabled: true,
-        origin: ["*"],
-        headers: ["*"],
-        methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-        credentials: true,
+        origin: ["http://localhost:4200", "https://ch-portfolio-dev.netlify.app/"],
       },
     },
   });
