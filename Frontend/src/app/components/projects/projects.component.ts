@@ -58,7 +58,7 @@ export class ProjectsComponent {
       repo_url: "https://github.com/cfsalazarp/E-factor",
       live_url: "",
       image: "https://res.cloudinary.com/dkc2tbb4g/image/upload/v1739757256/Captura_desde_2025_02_16_20_54_02_2f075d7945.png",
-      technologies: ["Angular", "Strapi", "Java"],
+      technologies: ["Angular 17", "API Rest"],
     },
     {
       id: 2,
@@ -131,7 +131,7 @@ export class ProjectsComponent {
       repo_url: "https://github.com/cfsalazarp/CH-Portfolio-dev",
       live_url: "https://ch-portfolio-dev.netlify.app/",
       image: "https://res.cloudinary.com/dkc2tbb4g/image/upload/v1739752497/Captura_desde_2025_02_16_06_34_38_bb3626c08c.png",
-      technologies: ["HTML5", "CSS3", "Javascript"],
+      technologies: ["Angular 19", "Strapi", "CSS"],
     },
     {
       id: 2,
@@ -149,8 +149,8 @@ export class ProjectsComponent {
       ],
       repo_url: "https://github.com/cfsalazarp/CH-Portfolio-dev",
       live_url: "https://ch-portfolio-dev.netlify.app/",
-      image: "https://res.cloudinary.com/dkc2tbb4g/image/upload/v1739757145/Platzi_Wordle_8533df3124.png",
-      technologies: ["Angular", "Springboot", "Oracle"],
+      image: "https://res.cloudinary.com/dkc2tbb4g/image/upload/v1739762628/Platzi_Wordle_Peq_4018ec1292.png",
+      technologies: ["HTML", "CSS", "Javascript"],
     },
   ];
   constructor(private projectsService: ProjectsService) {}
