@@ -12,7 +12,7 @@ footer {
 
 .footer-container {
   display: flex;
-  width: 100%;
+  width: auto;
   max-width: 1020px;
   margin: 0 auto;
   padding: 10px;
@@ -49,5 +49,12 @@ footer {
   transform: scale(1.1);
   i {
     color: #28a745;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
