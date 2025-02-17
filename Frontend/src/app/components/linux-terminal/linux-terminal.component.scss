@@ -4,25 +4,15 @@
   font-family: 'Courier New', monospace;
   padding: 10px;
   border-radius: 5px;
-  height: 150px;
-  width: 500px;
+  // height: 150px;
+  // width: 500px;
   border: 1px solid #333;
 
-  // @media screen and (max-width: 480px) {
-  //   height: ;
-  //   width: 70%;
-    
-  // }
-  @media screen and (max-width: 767px) {
-    height: 200px;
-    width: 70%;
-  }
-  @media screen and (max-width: 1024px) {
-    height: 150px;
-    width: 100%;
-  }
-
+  width: 100%;
+  max-width: 100%;
+  display: inline-block;
 }
+
 .terminal-header {
   display: flex;
   gap: 5px;
@@ -45,4 +35,19 @@
   overflow-wrap: break-word;
   display: flex;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .terminal {
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .terminal{
+    min-width: 250px;
+  }
+  .terminal-body p {
+    font-size: 0.6rem;
+  }
 }

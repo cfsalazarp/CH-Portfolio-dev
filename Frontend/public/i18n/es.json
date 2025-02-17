@@ -5,7 +5,7 @@
 		"projects": "Lo que hago"
 	},
 	"hero": {
-		"button": "Ver Proyectos",
+		"button": "Proyectos",
 		"description": "$ echo 'Convierto ideas en interfaces fluidas con Angular y optimizo la experiencia con RxJS y NgRx. Colaboro con equipos de backend y UX para crear productos escalables y eficientes. Me encanta resolver problemas y construir soluciones que realmente funcionan.' > about.ts",
 		"hello": "Hola! soy"
 	}
