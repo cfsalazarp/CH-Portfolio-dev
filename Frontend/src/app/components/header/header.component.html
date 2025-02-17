@@ -4,9 +4,11 @@
   </a>
 
   <nav id="nav">
-    <a href="#about">{{ "header.about" | translate }}</a> |
-    <a href="#projects">{{ "header.projects" | translate }}</a> |
-    <a href="#contact">{{ "header.contact" | translate }}</a>
+    <a id="about" href="#about">{{ "header.about" | translate }}</a>
+    <span>|</span>
+    <a id="projects" href="#projects">{{ "header.projects" | translate }}</a>
+    <span>|</span>
+    <a id="contact" href="#contact">{{ "header.contact" | translate }}</a>
   </nav>
 
   <button class="btn-secondary" (click)="toggleLanguage()">
