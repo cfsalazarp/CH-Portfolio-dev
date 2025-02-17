@@ -5,10 +5,11 @@ import { Social } from '@app/core/models/social.model';
 import { SocialService } from '@app/core/services/social.service';
 import { CommonModule } from '@angular/common';
 import { environment } from "../../environments/environment";
+import { CvSelectorComponent } from '../cv-selector/cv-selector.component';
 
 @Component({
   selector: 'app-hero',
-  imports: [LinuxTerminalComponent, TranslateModule, CommonModule],
+  imports: [LinuxTerminalComponent, TranslateModule, CommonModule, CvSelectorComponent],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
 })
