@@ -28,10 +28,12 @@ export default [
     },
   },
   {
-    name: "strapi::cors",
+    name: 'strapi::cors',
     config: {
-      origin: ["http://localhost:4200", "https://ch-portfolio-dev.netlify.app/"],
-      headers: "*",
+      enabled: true,
+      headers: '*',
+      origin: ['https://ch-portfolio-dev.netlify.app', 'http://localhost:1337'], // Permitir Netlify y localhost
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
       credentials: true,
     },
   },
