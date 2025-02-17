@@ -64,15 +64,8 @@ nav a:hover {
       height: 40px;
     }
 
-    nav {
-      #about, #projects, span{
-        display: none;
-      }
-    }
-
-    nav a{
-      font-size: 13px;
-
+    nav a,span{
+      display: none;
     }
 
     button{

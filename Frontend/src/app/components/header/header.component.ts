@@ -1,9 +1,10 @@
 import { Component } from "@angular/core";
 import { TranslateModule, TranslateService } from "@ngx-translate/core";
+import { CvSelectorComponent } from "../cv-selector/cv-selector.component";
 
 @Component({
   selector: "app-header",
-  imports: [TranslateModule],
+  imports: [TranslateModule, CvSelectorComponent],
   templateUrl: "./header.component.html",
   styleUrl: "./header.component.scss",
 })
