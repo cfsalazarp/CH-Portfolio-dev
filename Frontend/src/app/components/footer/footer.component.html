@@ -1,5 +1,16 @@
-<section id="contact">
-    <h2>
-        Contacto
-    </h2>
-</section>
+<footer>
+  <div class="footer-container">
+    <div class="social-icons">
+        <a class="social-link" *ngFor="let social of socialLinks" [href]="social.url" target="_blank">
+          <i *ngIf="social.slug === 'github'" class="fa-brands fa-github fa-2xl" alt="GitHub"></i>
+          <i *ngIf="social.slug === 'linkedin'" class="fa-brands fa-linkedin fa-2xl" alt="LinkedIn"></i>
+          <i *ngIf="social.slug === 'mail'" class="fa-solid fa-envelope fa-2xl" alt="Correo"></i>
+          <i *ngIf="social.slug === 'instagram'" class="fa-brands fa-instagram fa-2xl" alt="Instagram"></i>
+          <i *ngIf="social.slug === 'x'" class="fa-brands fa-square-x-twitter fa-2xl" alt="X"></i>
+        </a>
+      </div>
+      <p>
+        © 2025 Christian Salazar. Hecho con 🤍 en Angular.
+      </p>
+  </div>
+</footer>
