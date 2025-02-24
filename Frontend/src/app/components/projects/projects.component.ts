@@ -153,7 +153,7 @@ export class ProjectsComponent {
       technologies: ["Angular 19", "Typescript", "SCSS"],
     },
     {
-      id: 2,
+      id: 3,
       title: "Cien Latidos",
       description: [
         {
@@ -168,11 +168,11 @@ export class ProjectsComponent {
       ],
       repo_url: "",
       live_url: "https://cienlatidos.com",
-      image: "https://res.cloudinary.com/dkc2tbb4g/image/upload/v1739762628/Platzi_Wordle_Peq_4018ec1292.png",
+      image: "./assets/images/CienLatidos.png",
       technologies: ["Woocommerce", "Elementor"],
     },
     {
-      id: 3,
+      id: 4,
       title: "PlatziWordle",
       description: [
         {
