@@ -14,7 +14,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 export class ProjectsComponent {
   projects: Array<Project> = [
     {
-      id: 2,
+      id: 0,
       title: "E-Factor",
       description: [
         {
@@ -61,7 +61,7 @@ export class ProjectsComponent {
       technologies: ["Angular 17", "API Rest"],
     },
     {
-      id: 2,
+      id: 1,
       title: "Portafolio",
       description: [
         {
@@ -135,6 +135,44 @@ export class ProjectsComponent {
     },
     {
       id: 2,
+      title: "Sudoku by Ch",
+      description: [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "🚀 Convierte temperaturas entre Celsius, Fahrenheit y Kelvin en un par de clics, con una interfaz fluida y moderna. Usamos standalone components y signals para reactividad. ¡Súper ligera, eficiente y lista para correr en cualquier navegador! 🔥❄️",
+              "type": "text"
+            }
+          ]
+        }
+      ],
+      repo_url: "https://github.com/cfsalazarp/chudoku",
+      live_url: "https://sudoku-by-chdev.netlify.app/",
+      image: "https://res.cloudinary.com/dkc2tbb4g/image/upload/v1739762628/Platzi_Wordle_Peq_4018ec1292.png",
+      technologies: ["Angular 19", "Typescript", "SCSS"],
+    },
+    {
+      id: 2,
+      title: "Cien Latidos",
+      description: [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "❤️ Utilizando WordPress, Woocommerce y Elementor, cree un sitio web que no solo refleja la estética emocional de la marca, sino que también cumple con estándares de accesibilidad, rendimiento y diseño responsivo. El resultado: una web funcional y alineada con la potencia de la marca. 💥",
+              "type": "text"
+            }
+          ]
+        }
+      ],
+      repo_url: "",
+      live_url: "https://cienlatidos.com",
+      image: "https://res.cloudinary.com/dkc2tbb4g/image/upload/v1739762628/Platzi_Wordle_Peq_4018ec1292.png",
+      technologies: ["Woocommerce", "Elementor"],
+    },
+    {
+      id: 3,
       title: "PlatziWordle",
       description: [
         {
@@ -151,7 +189,7 @@ export class ProjectsComponent {
       live_url: "https://ch-portfolio-dev.netlify.app/",
       image: "https://res.cloudinary.com/dkc2tbb4g/image/upload/v1739762628/Platzi_Wordle_Peq_4018ec1292.png",
       technologies: ["HTML", "CSS", "Javascript"],
-    },
+    }
   ];
   constructor(private projectsService: ProjectsService) {}
 
