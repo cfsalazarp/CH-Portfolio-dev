@@ -147,9 +147,9 @@ export class ProjectsComponent {
           ]
         }
       ],
-      repo_url: "https://github.com/cfsalazarp/chudoku",
+      repo_url: "https://github.com/cfsalazarp/SudokuGame",
       live_url: "https://sudoku-by-chdev.netlify.app/",
-      image: "https://res.cloudinary.com/dkc2tbb4g/image/upload/v1739762628/Platzi_Wordle_Peq_4018ec1292.png",
+      image: "./assets/images/SudokuByCh.png",
       technologies: ["Angular 19", "Typescript", "SCSS"],
     },
     {
