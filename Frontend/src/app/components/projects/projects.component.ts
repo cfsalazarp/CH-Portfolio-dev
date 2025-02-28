@@ -220,8 +220,8 @@ export class ProjectsComponent {
           description: project.description,
           repo_url: project.repo_url,
           live_url: project.live_url,
-          image: project.image != null ? `${environment.STRAPI_HOST}${project.image.url}` : null,
-          technologies: project.technologies.map((technology: any) => technology.name)
+          image: project.image != null ? `${project.image.url}` : null,
+          technologies: project.technologies ? project.technologies.map((technology: any) => technology.name) : []
         }
       }).sort((a: Project, b: Project) => a.id - b.id);
     });
