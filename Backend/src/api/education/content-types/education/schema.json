@@ -33,7 +33,7 @@
         }
       }
     },
-    "stat_year": {
+    "start_date": {
       "type": "date",
       "pluginOptions": {
         "i18n": {
@@ -41,7 +41,7 @@
         }
       }
     },
-    "end_year": {
+    "end_date": {
       "type": "date",
       "required": false,
       "pluginOptions": {

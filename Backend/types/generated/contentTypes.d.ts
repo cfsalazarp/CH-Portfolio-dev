@@ -401,7 +401,7 @@ export interface ApiEducationEducation extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
-    end_year: Schema.Attribute.Date &
+    end_date: Schema.Attribute.Date &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -419,7 +419,7 @@ export interface ApiEducationEducation extends Struct.CollectionTypeSchema {
       'api::education.education'
     >;
     publishedAt: Schema.Attribute.DateTime;
-    stat_year: Schema.Attribute.Date &
+    start_date: Schema.Attribute.Date &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
