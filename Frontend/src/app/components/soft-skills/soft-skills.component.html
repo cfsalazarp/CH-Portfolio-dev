@@ -1,0 +1,17 @@
+<section>
+    <div class="soft-skills-container">
+        <h3 class="title">Habilidades Blandas</h3>
+        <div class="skills-list">
+          <div *ngFor="let skill of softSkills; let i = index" 
+               [@fadeInUp]="{ value: '', params: { delay: i * 1000 } }"
+               class="card">
+            <div class="card-content">
+              <div class="badge-container">
+                <span class="badge">{{ skill.name }}</span>
+              </div>
+              <p class="description" [innerHTML]="skill.description | strapiRichText"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>

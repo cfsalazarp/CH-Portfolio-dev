@@ -3,6 +3,7 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideHttpClient, HttpClient } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { provideAnimations } from '@angular/platform-browser/animations';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
 const httpLoaderFactory: (http: HttpClient) => TranslateHttpLoader = (http: HttpClient) =>
@@ -13,6 +14,7 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     provideHttpClient(),
+    provideAnimations(),
     importProvidersFrom([TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

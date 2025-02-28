@@ -4,6 +4,7 @@ import { TranslateModule, TranslateService } from "@ngx-translate/core";
 import { HeroComponent } from "./components/hero/hero.component";
 import { ProjectsComponent } from "./components/projects/projects.component";
 import { FooterComponent } from "./components/footer/footer.component";
+import { SoftSkillsComponent } from "./components/soft-skills/soft-skills.component";
 
 @Component({
   selector: "app-root",
@@ -12,8 +13,9 @@ import { FooterComponent } from "./components/footer/footer.component";
     TranslateModule,
     HeroComponent,
     ProjectsComponent,
-    FooterComponent
-  ],
+    FooterComponent,
+    SoftSkillsComponent,
+],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.scss",
 })
