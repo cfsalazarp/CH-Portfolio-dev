@@ -12,7 +12,7 @@ export class ProjectsService {
 
   getProjects() {
     return this.http
-      .get<any>(`${PROXY_URL}${encodeURIComponent(environment.STRAPI_HOST + '/api/projects?fields[0]=title&fields[1]=description&fields[2]=repo_url&fields[3]=live_url&populate[image][fields][0]=url&populate[technologies][fields][0]=name')}`)
+      .get<any>(`${PROXY_URL}${encodeURIComponent(environment.STRAPI_HOST + '/api/projects?fields[0]=title&fields[1]=description&fields[2]=repo_url&fields[3]=live_url&fields[4]=featured&populate[image][fields][0]=url&populate[technologies][fields][0]=name&sort[0]=id:asc')}`)
       .pipe(
         map((response) => response.data)
       );
