@@ -26,7 +26,7 @@ export class HeroComponent {
       id: 2,
       name: 'LinkedIn',
       slug: 'linkedin',
-      url: 'https://www.linkedin.com/in/cfsalazarp/',
+      url: 'https://www.linkedin.com/in/christiansalazar10/',
     },
     {
       id: 3,
