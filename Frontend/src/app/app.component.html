@@ -1,5 +1,43 @@
 <app-header></app-header>
 <app-hero></app-hero>
 <app-projects></app-projects>
-<app-soft-skills></app-soft-skills>
+<section id="carrera" class="resume">
+  <h2 class="resume-title">Resumen & Habilidades</h2>
+
+  <div class="resume-container">
+    <section class="experience">
+      <h3>Experiencia Laboral</h3>
+      <app-experience></app-experience>
+    </section>
+
+    <div class="right-section">
+      <section class="education">
+        <h3>Educación</h3>
+        <app-education></app-education>
+      </section>
+<!-- 
+      <section class="certificates">
+        <h3>Certificaciones</h3>
+        <app-courses></app-courses>
+      </section> -->
+    </div>
+  </div>
+</section>
+<section class="skills">
+  <!-- <div class="left-side">
+    <div class="tech-stack">
+        Tech stack
+    </div>
+    <div class="tech-tools">
+        Tech tools
+    </div>
+
+  </div> -->
+  <div class="right-side">
+    <section class="soft-skills">
+        <h3 class="title">Habilidades Blandas</h3>
+        <app-soft-skills></app-soft-skills>
+    </section>
+  </div>
+</section>
 <app-footer></app-footer>

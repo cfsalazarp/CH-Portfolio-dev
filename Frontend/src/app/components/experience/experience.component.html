@@ -1,0 +1,28 @@
+<div class="experience-container">
+    <div class="experience-list">
+      <div *ngFor="let exp of experiences; let i = index" 
+           class="experience-card"
+           [@fadeInUp]="{ value: '', params: { delay: i * 100 } }">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-header-content">
+              <div>
+                <h4 class="card-title">{{ exp.role }}</h4>
+                <p class="company">{{ exp.company }}</p>
+              </div>
+              <span class="badge period">{{ (exp.start_date | date: 'MMM y') + " - " + (exp.current ? "Presente" : (exp.end_date | date: 'MMM y')) }}</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <p class="description" [innerHTML]="exp.description | strapiRichText"></p>
+            <div class="skills">
+              <span *ngFor="let skill of exp.skills" class="badge skill">
+                {{ skill }}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

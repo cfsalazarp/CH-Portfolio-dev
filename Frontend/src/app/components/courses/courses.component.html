@@ -1,0 +1,19 @@
+<div class="certificates-container">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+      <div *ngFor="let cert of certificates; let i = index" 
+           class="carousel-item"
+           [@fadeInScale]="{ value: '', params: { delay: i * 100 } }">
+        <div class="card">
+          <div class="image-container">
+            <img [src]="cert.imageUrl" [alt]="cert.title" class="image" />
+          </div>
+          <div class="card-content">
+            <h4 class="title">{{ cert.title }}</h4>
+            <p class="issuer">{{ cert.issuer }}</p>
+            <p class="date">{{ cert.date }}</p>
+          </div>
+        </div>
+      </div>
+    </ngx-slick-carousel>
+  </div>
+  

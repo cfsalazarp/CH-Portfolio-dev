@@ -1,0 +1,23 @@
+<div class="education-container">
+    <div class="education-list">
+      <div *ngFor="let edu of educations; let i = index" 
+           class="education-card"
+           [@fadeInUp]="{ value: '', params: { delay: i * 100 } }">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-header-content">
+              <div>
+                <h4 class="card-title">{{ edu.degree }}</h4>
+                <p class="institution">{{ edu.institution }}</p>
+              </div>
+              <span class="badge period">{{ (edu.start_date | date: 'MMM y':'es') + " - " + (edu.end_date | date: 'MMM y':'es-ES') }}</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <p class="description" [innerHTML]="edu.description | strapiRichText">hola</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

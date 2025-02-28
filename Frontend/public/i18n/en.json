@@ -2,7 +2,8 @@
 	"header": {
 		"about": "About",
 		"contact": "Contact",
-		"projects": "What I do"
+		"projects": "What I do",
+		"career": "My Career"
 	},
 	"hero": {
 		"button": "Projects",
