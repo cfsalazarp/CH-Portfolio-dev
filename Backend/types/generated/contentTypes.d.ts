@@ -401,6 +401,7 @@ export interface ApiEducationEducation extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    description: Schema.Attribute.Blocks;
     end_date: Schema.Attribute.Date &
       Schema.Attribute.SetPluginOptions<{
         i18n: {

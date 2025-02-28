@@ -57,6 +57,9 @@
           "localized": true
         }
       }
+    },
+    "description": {
+      "type": "blocks"
     }
   }
 }
